@@ -2,7 +2,7 @@
 #include <vector>
 #include <test1/Gmap.h>
 
-#ifndef PI
+#ifndef P
 	#define PI 3.141593
 #endif // !
 
@@ -41,6 +41,8 @@ public:
 	void printLocalmap() const;
 
 	float getGrid();
+	int getLocal_num_x();
+	int getLocal_num_y();
 
 	/*
 	void setCost_visual(int y, int x);

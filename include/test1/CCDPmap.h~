@@ -2,7 +2,7 @@
 #include <vector>
 #include <test1/Gmap.h>
 
-#ifndef PI
+#ifndef P
 	#define PI 3.141593
 #endif // !
 

@@ -28,7 +28,7 @@ Gmap::~Gmap(){
 void Gmap::load_map(int num_map, bool object){
 	switch(num_map){
 	case 1:
-		grid = 0.5;
+		grid = 0.1;
 		glen = 1;
 		int a[2] = { 1,2 };
 		x_rng = {-10, 10};
@@ -87,10 +87,10 @@ void Gmap::printGlobalmap() const {
 	std::cout << "********** Gmap **********" << std::endl;
 	for (int i = 0; i<num_yaxis; i++) {
 		for (int j = 0; j<num_xaxis; j++) {
-			if (i == -int(y_rng[0] / grid)) {
+			if (i == int(y_rng[1] / grid)-1) {
 				std::cout << "^";
 			}
-			else if (j == -int(x_rng[0] / grid)) {
+			else if (j == -int(x_rng[0] / grid)+1) {
 				std::cout << "<";
 			}
 			else {
